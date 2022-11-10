@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class HoroscopeTeller {
     private int birthYear;
     private int birthMonth;
@@ -36,7 +37,7 @@ public class HoroscopeTeller {
         else if ((month == 11 && day >= 22 && day <= 30) || (month == 12 && day >= 1 && day <= 21))
             zodiac = "Sagittarius";
         else
-            System.out.println("unidentifiable");
+            return "unidentifiable";
         return zodiac;
     }
     public String getElement(String zodiacElement){
@@ -56,7 +57,8 @@ public class HoroscopeTeller {
         return element;
     }
     public String getFortune(int randomNumber){
-        return "fortune";
+        int randomNumber = (int)(Math.random()*10 +1);
+        if
     }
 
 }

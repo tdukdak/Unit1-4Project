@@ -29,8 +29,7 @@ Attach the variables to an object
 Call the getZodiac method to deduce the horoscope
 Call the getElement method then to deduce the horoscope
 Ask if they wish to hear their fortune
-Ask for a random number from 1-10
-Give a random fortune based off the number
+Give a random fortune cookie type saying
 Then display lifespan left
 
  */
