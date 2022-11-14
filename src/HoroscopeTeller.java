@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class HoroscopeTeller {
-    private int birthYear;
+    private int year;
     private int birthMonth;
     private int birthDay;
     private String zodiac;
@@ -9,7 +9,7 @@ public class HoroscopeTeller {
     public HoroscopeTeller(int month, int day, int year){
         month = birthMonth;
         day = birthDay;
-        year = birthYear;
+        year = year;
     }
     public String getZodiac(int month, int day){
         if((month == 12 && day >= 22 && day <= 31) || (month ==  1 && day >= 1 && day <= 19))
@@ -77,16 +77,16 @@ public class HoroscopeTeller {
         }
         return "you have an unforeseeable future";
     }
-    public int lifeSpan(){
-        if (birthYear > 2000){
+    public int lifeSpan(int year){
+        if (year > 2000){
             int youngerGen = (int)(Math.random()*50+1);
             return youngerGen;
         }
-        else if (birthYear < 2000 && birthYear > 1980){
+        else if (year < 2000 && year > 1980){
             int millennials = (int)(Math.random()*30+1);
             return millennials;
         }
-        else if (birthYear < 1980 && birthYear > 1950){
+        else if (year < 1980 && year > 1950){
             int elderly = (int)(Math.random()*10+1);
             return elderly;
         }
