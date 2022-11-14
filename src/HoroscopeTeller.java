@@ -56,9 +56,28 @@ public class HoroscopeTeller {
         }
         return element;
     }
-    public String getFortune(int randomNumber){
-        int randomNumber = (int)(Math.random()*10 +1);
-        if
+    public String getFortune(){
+        int randNumber = (int)(Math.random()*10 +1);
+        for(int i = 0; i < 11; i++){
+            if (randNumber == 1 || randNumber == 6){
+                return "beware of stairs";
+            }
+            if (randNumber == 2 || randNumber == 7){
+                return "get rid of the toxic person in your life";
+            }
+            if (randNumber == 3 || randNumber == 8){
+                return "Prosper in the trust of others";
+            }
+            if (randNumber == 4 || randNumber == 9){
+                return "Keep your eye out for someone special";
+            }
+            if (randNumber == 5 || randNumber == 10){
+                return "Land is on the mind of a flying bird";
+            }
+        }
+        return "you have an unforeseeable future";
     }
-
+    public int lifeSpan(){
+        return 6;
+    }
 }
