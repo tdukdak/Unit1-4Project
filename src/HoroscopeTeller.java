@@ -78,6 +78,20 @@ public class HoroscopeTeller {
         return "you have an unforeseeable future";
     }
     public int lifeSpan(){
-        return 6;
+        if (birthYear > 2000){
+            int youngerGen = (int)(Math.random()*50+1);
+            return youngerGen;
+        }
+        else if (birthYear < 2000 && birthYear > 1980){
+            int millennials = (int)(Math.random()*30+1);
+            return millennials;
+        }
+        else if (birthYear < 1980 && birthYear > 1950){
+            int elderly = (int)(Math.random()*10+1);
+            return elderly;
+        }
+        else {
+            return 0;
+        }
     }
 }

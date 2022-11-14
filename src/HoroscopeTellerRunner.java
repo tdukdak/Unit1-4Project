@@ -28,6 +28,7 @@ public class HoroscopeTellerRunner {
                 System.out.println("make a choice please");
             }
         }
+        System.out.println(userFortune.lifeSpan());
 
     }
 }
