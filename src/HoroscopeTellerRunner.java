@@ -28,7 +28,20 @@ public class HoroscopeTellerRunner {
                 System.out.println("make a choice please");
             }
         }
-        System.out.println(userFortune.lifeSpan(birthYear));
 
+        int choice2 = 0;
+        while(choice2 != 1 && choice2 != 2){
+            System.out.print("do you want to know how many years you have left to live? (1 = yes 2 = no)");
+            choice2 = s.nextInt();
+            if (choice2 == 1){
+                System.out.println(userFortune.lifeSpan(birthYear));
+            }
+            else if (choice2 == 2){
+                System.out.println("very well.");
+            }
+            else{
+                System.out.println("make a choice please");
+            }
+        }
     }
 }
