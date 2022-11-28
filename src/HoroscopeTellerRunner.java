@@ -12,8 +12,9 @@ public class HoroscopeTellerRunner {
 
         HoroscopeTeller userFortune = new HoroscopeTeller(birthMonth, birthDay, birthYear);
 
-        System.out.println("you are a " + userFortune.getZodiac(birthMonth, birthDay));
-        System.out.println("which is a " + userFortune.getElement(userFortune.getZodiac(birthMonth, birthDay)));
+        userFortune.getZodiac(birthMonth, birthDay);
+        userFortune.getElement(userFortune.getZodiac(birthMonth, birthDay));
+        System.out.println(userFortune.toString());
 
         while(choice != 1 && choice != 2){
             System.out.print("do you want to hear your fortune? (1 = yes 2 = no)");

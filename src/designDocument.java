@@ -10,7 +10,7 @@ Private String zodiac - this will be found out later based on the user data
 Public Horoscope(int birthMonth,  int birthDay, int birthYear)
 This constructor will contain all the birth variables which will be used later to determine horoscope
 
-Public String getElement(birthMonth)
+Public String getElement(zodiac)
 Will return the zodiac element
 
 Public String getZodiac(birthMonth, birthDay)
@@ -21,6 +21,9 @@ Will return a random future depending on the birthYear date
 
 Public int yearsLeft()
 Predicts a random lifespan left depending on birthYear
+
+Public String toString()
+concatenates and returns a full sentence reporting the zodiac and its element
 
 HoroscopeTellerRunner class
 Ask for the users birth info
